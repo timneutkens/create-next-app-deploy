@@ -1,7 +1,5 @@
 import { cookies } from "next/headers";
 
-export const runtime = "edge";
-
 export default async function Home() {
   console.log("HOME PAGE");
   const cookie = (await cookies()).get("cookie")?.value;
